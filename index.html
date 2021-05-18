@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByCircle Landing Page Tailwindcss</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./src/img/logo.png" />
+
+    <!-- TAILWIND -->
+    <link rel="stylesheet" href="./dist/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="l-header fixed w-full z-50 px-4 md:px-32">
+      <div class="container mx-auto py-4">
+        <nav class="nav relative flex justify-between items-center">
+          <!-- Header Logo -->
+          <div>
+            <a href="#" class="nav__logo">
+              <img class="w-14 md:w-auto" src="./src/img/logo.png" alt="Logo" />
+            </a>
+          </div>
+
+          <!-- Header Menu -->
+          <div class="nav__menu md:flex md:items-center" id="nav-menu">
+            <!-- Header Close Menu Button -->
+            <div
+              class="nav__close absolute text-blue-900 top-4 right-4 md:hidden"
+              id="nav-close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 fill-current"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+
+            <ul class="nav__list md:flex">
+              <li class="nav__item mb-8 md:mb-0 mx-6">
+                <a href="#" class="nav__link relative font-light active"
+                  >Guides</a
+                >
+              </li>
+              <li class="nav__item mb-8 md:mb-0 mx-6">
+                <a href="#" class="nav__link relative font-light">Pricing</a>
+              </li>
+              <li class="nav__item mb-8 md:mb-0 mx-6">
+                <a href="#" class="nav__link relative font-light">Team</a>
+              </li>
+              <li class="nav__item mb-8 md:mb-0 mx-6">
+                <a href="#" class="nav__link relative font-light">Stories</a>
+              </li>
+            </ul>
+
+            <!-- Header Button -->
+            <div>
+              <a
+                href="#"
+                class="nav__button flex justify-center items-center px-8 py-3 bg-blue-900 text-white font-medium shadow-shadowBtn"
+                >My Account</a
+              >
+            </div>
+          </div>
+
+          <!-- Header Open Menu Toggle -->
+          <div class="nav__toggle text-blue-900 md:hidden" id="nav-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 fill-current"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER SECTION -->
+
+    <main class="l-main">
+      <!-- HERO SECTION -->
+      <section
+        class="hero relative overflow-hidden bg-gradient-to-tr from-blue-100 to-red-100"
+        id="hero"
+      >
+        <div
+          class="hero__container container mx-auto h-screen px-4 grid grid-rows-6"
+        >
+          <div
+            class="hero__img row-span-5 justify-self-center self-center z-10"
+          >
+            <img
+              class="md:w-100 2xl:w-auto"
+              src="./src/img/home-image.png"
+              alt="Hero Image"
+            />
+          </div>
+
+          <div class="hero__scroll row-span-1 justify-self-center self-center">
+            <a href="#" class="hero__scroll-link flex items-center">
+              <img
+                class="w-6 mr-1"
+                src="./src/img/arrow-icon.png"
+                alt="Arrow Icon"
+              />
+              <p class="text-blue-900">Scroll to Learn More</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__pattern hidden md:block">
+          <div class="hero__pattern-left absolute top-0 left-0">
+            <img src="./src/img/left-pattern.png" alt="" />
+          </div>
+
+          <div class="hero__pattern-right absolute top-0 right-0">
+            <img src="./src/img/right-pattern.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- HERO SECTION -->
+    </main>
+
+    <!-- JAVASVCRIPT -->
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
